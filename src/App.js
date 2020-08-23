@@ -44,7 +44,7 @@ function App() {
         })
       );
     }
-  });
+  }, []);
 
   console.log('User ===>', user);
   console.log('Token ==>', token);

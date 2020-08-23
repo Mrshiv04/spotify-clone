@@ -8,7 +8,7 @@ import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import SongRow from './songRow';
 
 function Body({ spotify }) {
-  const [{ discover_weekly }] = useDataLayerValue();
+  const [{ discover_weekly }, dispatch] = useDataLayerValue();
   return (
     <div className='body'>
       <Header spotify={spotify} />
